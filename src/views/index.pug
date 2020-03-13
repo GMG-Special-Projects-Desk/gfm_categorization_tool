@@ -1,0 +1,43 @@
+extends layout
+
+block layout-content
+	div.wrapper
+		div.gofundme-content
+			a(href=url)
+				p=title
+			p=story
+		div.form
+			form(method=POST, action='/submit',name='categorize-form')
+				select(name = 'disease_category' id = 'dc')
+					option Disease Category
+					option(value = 'heart') Heart Disease
+					option(value = 'cancer') Cancer/Tumors
+					option(value = 'stomach') Gastrointestinal/Stomach
+					option(value = 'respiratory') Respiratory Disease
+					option(value = 'diabetes') Diabetes
+					option(value = 'high_blood_pressure') High Blood Pressure
+					option(value = 'neurological_problems') Neurological Problems
+					option(value = 'auto_immune') Auto Immune Disease
+					option(value = 'kidney') Kidney Disease
+					option(value = 'cervical') Cervial/Ovarian
+					option(value = 'injuries') Pain or Injuries
+					option(value = 'bones') Broken Bones
+					option(value = 'dental') Dental
+					option(value = 'infectious_disease') Infectious Disease
+					option(value = 'mental') Mental Health / Substance Abuse
+					option(value = 'childbirth') Pregancy/Childbirth/Maternity
+					option(value = 'IDK') Don't Know
+
+
+				select(name = 'funding_category' id = 'fc')
+					option Funding Category
+					option(value='surgery')  surgery 
+					option(value='hospital') hospital
+					option(value='chronic') chronic
+					option(value='medication') medication  
+					option(value='other') other
+					option(value='preventative') preventative
+
+				input(type='hidden' name='url' id='url' value=url) 
+				input(type="submit")
+

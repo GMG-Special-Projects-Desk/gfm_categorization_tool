@@ -1,0 +1,3 @@
+
+COPY posts(url,  checked,byline,story,date,type,title,raised,goal,donations,donors) 
+FROM '/tmp/query.csv' DELIMITER ',' CSV HEADER;
