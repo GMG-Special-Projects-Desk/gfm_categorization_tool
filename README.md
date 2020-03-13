@@ -1,6 +1,5 @@
-# Express Postgres Starter
+# Categorization Web Appp
 
-> A starter project for Node.js with Express and Postgres
 
 ## Setup
 
