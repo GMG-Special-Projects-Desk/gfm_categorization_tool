@@ -10,20 +10,20 @@ block layout-content
 			form(method=POST, action='/submit',name='categorize-form')
 				select(name = 'disease_category' id = 'dc')
 					option Disease Category
-					option(value = 'heart') Heart Disease
+					option(value = 'heart')  Heart disease/attack/stroke
 					option(value = 'cancer') Cancer/Tumors
-					option(value = 'stomach') Gastrointestinal/Stomach
-					option(value = 'respiratory') Respiratory Disease
+					option(value = 'stomach') Gastrointestinal/stomach
+					option(value = 'respiratory') Allergies/asthma/respiratory disease
 					option(value = 'diabetes') Diabetes
 					option(value = 'high_blood_pressure') High Blood Pressure
 					option(value = 'neurological_problems') Neurological Problems
 					option(value = 'auto_immune') Auto Immune Disease
 					option(value = 'kidney') Kidney Disease
-					option(value = 'cervical') Cervial/Ovarian
+					option(value = 'cervical') Cervial/Ovarian/Gyno
 					option(value = 'injuries') Pain or Injuries
 					option(value = 'bones') Broken Bones
 					option(value = 'dental') Dental
-					option(value = 'infectious_disease') Infectious Disease
+					option(value = 'infectious_disease') Infectious Disease (pneumonia, lung infection, viral infection, other infection)
 					option(value = 'mental') Mental Health / Substance Abuse
 					option(value = 'childbirth') Pregancy/Childbirth/Maternity
 					option(value = 'IDK') Don't Know
@@ -32,10 +32,10 @@ block layout-content
 				select(name = 'funding_category' id = 'fc')
 					option Funding Category
 					option(value='surgery')  surgery 
-					option(value='hospital') hospital
-					option(value='chronic') chronic
+					option(value='hospital') hospital bills
 					option(value='medication') medication  
-					option(value='other') other
+					option(value='medical_debt') medical debt
+					option(value='other') other support
 					option(value='preventative') preventative
 
 				input(type='hidden' name='url' id='url' value=url) 
