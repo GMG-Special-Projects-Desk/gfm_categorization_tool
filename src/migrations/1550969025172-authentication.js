@@ -16,7 +16,9 @@ module.exports.up = async function(next) {
         raised float,
         goal float,
         donations int,
-        donors int
+        donors int,
+        last_mod date,
+        create_date date
       );
     `);
 

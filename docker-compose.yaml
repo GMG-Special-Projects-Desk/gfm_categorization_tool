@@ -6,7 +6,7 @@ services:
     depends_on:
       - postgres
     environment:
-      DATABASE_URL: postgres://doof:@postgres:5432/gofundme-medical 
+      DATABASE_URL: 
       NODE_ENV: development
       PORT: 3000
     ports:

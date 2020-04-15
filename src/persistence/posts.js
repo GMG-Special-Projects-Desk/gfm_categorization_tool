@@ -23,9 +23,10 @@ module.exports = {
     update posts set funding_condition =  ${items['funding_condition']} WHERE url = ${items['url']}`);
     await db.query(sql`
     update posts set disease_condition =  ${items['disease_condition']} WHERE url = ${items['url']}`)
+    await db.query(sql`
+    update posts set checked=true WHERE url = ${items['url']}`);
     const {rows}=await db.query(sql`
     select * from posts WHERE url = ${items['url']} limit 1`)
-
     return rows[0]
   }
 };
